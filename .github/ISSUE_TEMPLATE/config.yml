@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the contribution guidelines first
+    url: https://github.com/VictorOsondu/awesome-ai-search-readiness/blob/main/CONTRIBUTING.md
+    about: Inclusion bar, voice, and the kinds of resources that get rejected.
