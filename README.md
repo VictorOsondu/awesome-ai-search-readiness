@@ -71,7 +71,7 @@ The machine-readable layer. If AI tools cannot parse your site, no amount of cle
 Writing for citation is not writing for SEO. AI tools extract sentences, not pages. Structure for clarity, answer specific questions, lead with the fact.
 
 - [Google: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) - Old guidance, still load-bearing. AI tools and classical search converge on the same content qualities.
-- [How to create answer-first content that AI models actually cite](https://searchengineland.com/guide/how-to-create-answer-first-content) - Ten-step guide to the direct-answer paragraph AI engines extract. The clearest single how-to in this category.
+- [How to create answer-first content that AI models actually cite](https://searchengineland.com/guide/how-to-create-answer-first-content) - Ten-step guide to writing the direct-answer paragraph AI engines extract.
 - [LLM-Friendly Content: 12 Tips to Get Cited in AI Answers](https://www.onely.com/blog/llm-friendly-content/) - Onely's structural checklist: answer-first, listicles, tables, fact density. Vendor-adjacent but unusually concrete.
 - [Information gain in SEO: what it is and why it matters](https://searchengineland.com/what-is-information-gain-seo-why-it-matters-429763) - Plain-English read on Google's information-gain patent. Anchors the "don't recycle, add" argument.
 - [Breaking up is hard to do: chunking in RAG applications](https://stackoverflow.blog/2024/12/27/breaking-up-is-hard-to-do-chunking-in-rag-applications/) - Retrieval-side explainer that makes every other piece of structural advice make sense. AI engines extract sentences, not pages.
@@ -95,14 +95,19 @@ Tools that monitor whether ChatGPT, Perplexity, Claude, or Gemini cite your site
 
 The category is hot, not dormant. Every major name has shipped product and raised funding in 2025–2026. The dividing line is now pricing transparency rather than capability: several well-funded enterprise tools (Profound, Bluefish, Goodie, Conductor) have pulled public tiers and gone contact-sales-only. They are real products; they are not listed because the audience for this list cannot use them. Stick to the tools where you can read the price.
 
-- [HubSpot AI Search Grader](https://www.hubspot.com/aeo-grader/ai-search-tool) - Free one-shot diagnostic: how ChatGPT, Perplexity, and Gemini describe your brand. No signup. The single best first read.
+_Pricing and supported engines verified May 2026._
+
+- [HubSpot AI Search Grader](https://www.hubspot.com/aeo-grader/ai-search-tool) - Free, no-signup diagnostic showing how ChatGPT, Perplexity, and Gemini describe your brand. Returns the actual quoted descriptions, not a score.
 - [Ahrefs AI Visibility Checker](https://ahrefs.com/ai-visibility-checker) - Free check across ChatGPT, Gemini, Perplexity, Copilot, and AI Overviews using real search-derived prompts. No signup; paid tiers from $398/mo.
-- [Otterly.AI](https://otterly.ai/) - Continuous monitoring across the major AI engines. Transparent pricing from $29/mo; the default for solo and small-team buyers. `[paid]` `[requires signup]`.- [Peec AI](https://peec.ai/) - Prompt-based tracking with multi-region and Looker support. From €85/mo; closest like-for-like alternative to Otterly. `[paid]` `[requires signup]`.- [AthenaHQ](https://athenahq.ai/) - YC-backed AEO platform across 8+ engines with prompt-volume estimation. From $95/mo annual. Treat in-house case studies sceptically. `[paid]` `[requires signup]`.
+- [Otterly.AI](https://otterly.ai/) - Continuous monitoring across the major AI engines. Transparent pricing from $29/mo; the default for solo and small-team buyers. `[paid]` `[requires signup]`
+- [Peec AI](https://peec.ai/) - Prompt-based tracking with multi-region and Looker support. From €85/mo; closest like-for-like alternative to Otterly. `[paid]` `[requires signup]`
+- [AthenaHQ](https://athenahq.ai/) - YC-backed AEO platform across 8+ engines with prompt-volume estimation. From $95/mo annual. Treat in-house case studies sceptically. `[paid]` `[requires signup]`
 ## Visibility Auditing
 
 Methodologies, frameworks, and checklists for auditing a site's AI search readiness — including the curator's own service.
 
-- [Website & AI Search Readiness Audit](https://contra.com/) - The curator's paid audit. Disclosed: this is Victor's own service. Listed for transparency, not as a recommendation over alternatives. `[paid]`.- [AI Search Content Optimization Checklist](https://www.aleydasolis.com/en/ai-search/ai-search-optimization-checklist/) - Aleyda Solís's free 10-step Google Sheet covering crawlability, chunk structure, citation-worthiness, and measurement. The vendor-neutral default.
+- [Website & AI Search Readiness Audit](https://contra.com/VictorOsondu/) - The curator's paid audit. Disclosed: this is Victor's own service. Listed for transparency, not as a recommendation over alternatives. `[paid]`
+- [AI Search Content Optimization Checklist](https://www.aleydasolis.com/en/ai-search/ai-search-optimization-checklist/) - Aleyda Solís's free 10-step Google Sheet covering crawlability, chunk structure, citation-worthiness, and measurement. Updated through April 2026; no signup.
 - [The AI Search Manual](https://ipullrank.com/ai-search-manual) - Mike King's book-length open manual on Relevance Engineering. Free to read; iPullRank monetises via consulting separately.
 
 ## Research & Evidence
@@ -131,7 +136,7 @@ How each major answer engine selects, cites, and ranks sources — straight from
 ### ChatGPT (OpenAI)
 
 - [OpenAI: ChatGPT search](https://openai.com/index/introducing-chatgpt-search/) - OpenAI's official explanation of how ChatGPT search retrieves and cites web content.
-- [AI Search Architecture Deep Dive](https://ipullrank.com/ai-search-manual/search-architecture) - Architectural teardown by iPullRank covering ChatGPT, Bing Copilot, Perplexity, and Gemini retrieval pipelines. The strongest single open-web piece on ChatGPT search mechanics.
+- [AI Search Architecture Deep Dive](https://ipullrank.com/ai-search-manual/search-architecture) - Architectural teardown by iPullRank covering ChatGPT, Bing Copilot, Perplexity, and Gemini retrieval pipelines. Includes RAG, reranking, and citation pipeline diagrams.
 
 ### Perplexity
 
@@ -153,11 +158,11 @@ How each major answer engine selects, cites, and ranks sources — straight from
 Tools you can actually run. Free first, paid clearly labelled. Inclusion is not endorsement of pricing or roadmap — it's a statement that the tool currently does what it claims.
 
 - [Schema Markup Validator](https://validator.schema.org/) - The official schema.org validator. Strict syntactic check; use after Google's Rich Results Test.
-- [Schema Markup Generator (Merkle / TechnicalSEO)](https://technicalseo.com/tools/schema-markup-generator/) - Free form-based JSON-LD generator covering Article, Product, FAQ, LocalBusiness, HowTo, and 100+ local subtypes. The industry default.
+- [Schema Markup Generator (Merkle / TechnicalSEO)](https://technicalseo.com/tools/schema-markup-generator/) - Free form-based JSON-LD generator from Merkle (dentsu). Covers Article, Product, FAQ, LocalBusiness, HowTo, and 100+ local subtypes.
 - [Schema.dev Builder](https://schema.dev/) - Free JSON-LD builder, tester, and deployer. More schema types than Merkle's; paid tier for managed deployment.
-- [AI Crawler Simulator](https://keyword.com/ai-crawler-simulator/) - Free, no-signup tool that hits your URL with the real user-agents of 12 AI crawlers and returns status codes per bot. The fastest way to spot the most common AI-visibility failure (you're 403-ing the bots).
+- [AI Crawler Simulator](https://keyword.com/ai-crawler-simulator/) - Free, no-signup tool that hits your URL with the real user-agents of 12 AI crawlers and returns status codes per bot. Reveals if you're accidentally 403-ing AI bots.
 - [CrawlerCheck](https://crawlercheck.com/) - Free analyser of robots.txt, meta robots, and X-Robots-Tag for major search and AI bots. Complementary to the AI Crawler Simulator: that one tests live access, this one tests configuration.
-- [LLMrefs AI Crawlability Checker](https://llmrefs.com/tools/ai-crawl-checker) - Free crawl test that shows the actual text GPTBot can extract after JS is stripped. The most useful diagnostic if your content is JS-rendered.
+- [LLMrefs AI Crawlability Checker](https://llmrefs.com/tools/ai-crawl-checker) - Free crawl test that shows the actual text GPTBot extracts after JS is stripped. Useful for SPA debugging.
 - [SiteTest.ai](https://sitetest.ai/) - Free A–F GEO grade across 168 checks (technical access, semantic clarity, citability). Paid tiers from $4.99 add per-platform scores. Verify still live before relying on the price.
 - [Firecrawl llms.txt generator](https://llmstxt.firecrawl.dev/) - Free, open-source generator for `llms.txt` and `llms-full.txt`. Pair with the llms.txt spec listed under Standards.
 - [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/) - UK-built desktop crawler that can spoof AI bot user-agents and pipe pages through LLMs during crawl. Free up to 500 URLs; £199/year above. `[uk]` `[paid]`.
@@ -165,7 +170,11 @@ Tools you can actually run. Free first, paid clearly labelled. Inclusion is not 
 
 Where practitioners actually compare notes. Marketing thought-leadership Substacks excluded unless they ship original evidence.
 
-- [Growth Memo](https://www.growth-memo.com/) - Kevin Indig's research-led newsletter: original UX studies, clickstream analyses, and citation-pattern work. The exception to the "marketing thought-leadership Substack" exclusion. `[community]`.- [SEOFOMO](https://seofomo.co/) - Aleyda Solís's weekly curated digest of SEO + AI-search news. The best filter on a noisy beat. `[community]` `[requires signup]`.- [Lily Ray on Substack](https://lilyraynyc.substack.com/) - Original analyses of AI-content backfire patterns, AI Overview citation anomalies, and listicle gaming. Public archive, no paywall. `[community]`.- [r/TechSEO](https://www.reddit.com/r/TechSEO/) - The only subreddit where AI-search technical questions get real practitioner answers rather than agency pitches. Skip the bigger SEO subs. `[community]`.
+- [Growth Memo](https://www.growth-memo.com/) - Kevin Indig's research-led newsletter: original UX studies, clickstream analyses, and citation-pattern work. The exception to the "marketing thought-leadership Substack" exclusion. `[community]`
+- [SEOFOMO](https://seofomo.co/) - Aleyda Solís's weekly curated digest of SEO + AI-search news. ~40K subscribers. `[community]` `[requires signup]`
+- [Lily Ray on Substack](https://lilyraynyc.substack.com/) - Original analyses of AI-content backfire patterns, AI Overview citation anomalies, and listicle gaming. Public archive, no paywall. `[community]`
+- [r/TechSEO](https://www.reddit.com/r/TechSEO/) - The only subreddit where AI-search technical questions get real practitioner answers rather than agency pitches. Skip the bigger SEO subs. `[community]`
+
 ## Anti-Patterns & Myths
 
 The most useful section in this list. Read before you spend.
@@ -189,13 +198,13 @@ SEO is changing, not dying. Classical search still drives most of the traffic on
 A whitepaper from a tool company showing that their tool helps is not evidence. It is marketing. Look for independent studies, public datasets, or before/after data from someone with no financial interest.
 
 **"Schema markup is enough on its own."**
-Schema is necessary infrastructure but does not, on its own, move AI citations on pages already established enough to rank. Ahrefs ran a difference-in-differences on 1,885 pages adding schema between August 2025 and March 2026 — Google AI Overview citations fell 4.6%, AI Mode and ChatGPT moved 2.4% and 2.2%, both statistically indistinguishable from zero. Audits keep turning up pages with perfect FAQPage markup that don't get cited, and pages with no schema at all that do. Schema makes you eligible. The content beneath it decides whether you're chosen.
+Schema is necessary infrastructure but does not, on its own, move AI citations on pages already established enough to rank. [Ahrefs ran a difference-in-differences on 1,885 pages adding schema](https://ahrefs.com/blog/schema-ai-citations/) between August 2025 and March 2026 — Google AI Overview citations fell 4.6%, AI Mode and ChatGPT moved 2.4% and 2.2%, both statistically indistinguishable from zero. Audits keep turning up pages with perfect FAQPage markup that don't get cited, and pages with no schema at all that do. Schema makes you eligible. The content beneath it decides whether you're chosen.
 
 **"Block AI crawlers to protect your content."**
-Blocking AI crawlers protects you from being trained on; it also makes you invisible to the AI search engines your buyers now use. Cloudflare flipped its default to block AI crawlers on 1 July 2025, and most site owners who clicked that toggle did so without realising that `OAI-SearchBot`, `PerplexityBot`, and `Google-Extended` do retrieval for live answers, not training. You can refuse training and still allow citation — but only if you read your robots.txt carefully and know which user-agent does which job. The right posture is policy, not panic.
+Blocking AI crawlers protects you from being trained on; it also makes you invisible to the AI search engines your buyers now use. [Cloudflare flipped its default to block AI crawlers on 1 July 2025](https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/), and most site owners who clicked that toggle did so without realising that `OAI-SearchBot`, `PerplexityBot`, and `Google-Extended` do retrieval for live answers, not training. You can refuse training and still allow citation — but only if you read your robots.txt carefully and know which user-agent does which job. The right posture is policy, not panic.
 
 **"Long-form content always wins."**
-AI engines cite sections, not posts — extractable structure beats word count. Ahrefs' analysis of 560,000+ AI Overviews found 53.4% of citations go to pages under 1,000 words; the correlation between word count and citation position is effectively zero. The model isn't reading your essay; it's scanning for a chunk that answers a question without needing the chunks around it. A well-structured 800-word piece routinely outperforms a meandering 3,000-word one. The reason is mechanical, not aesthetic.
+AI engines cite sections, not posts — extractable structure beats word count. [Ahrefs' analysis of 560,000+ AI Overviews](https://ahrefs.com/blog/short-vs-long-content-in-ai-overviews/) found 53.4% of citations go to pages under 1,000 words; the correlation between word count and citation position is effectively zero. The model isn't reading your essay; it's scanning for a chunk that answers a question without needing the chunks around it. A well-structured 800-word piece routinely outperforms a meandering 3,000-word one. The reason is mechanical, not aesthetic.
 
 ---
 
@@ -205,4 +214,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Opinionated curation, vendor pitches c
 
 ## Footnotes
 
-Curated by Victor Osondu, founder of [AI Tutorium](https://aitutorium.com) and director of [Arnet Digital](https://arnet.co.uk). Victor audits websites for AI search readiness as a paid service — see his [Contra profile](https://contra.com/) if you'd rather hand it off than DIY. The audit and the list share a methodology: structured data, citation-friendly content, technical fundamentals, in that order.
+Curated by Victor Osondu, founder of [AI Tutorium](https://aitutorium.com) and director of [Arnet Digital](https://arnet.co.uk). Victor audits websites for AI search readiness as a paid service — see his [Contra profile](https://contra.com/VictorOsondu/) if you'd rather hand it off than DIY. The audit and the list share a methodology: structured data, citation-friendly content, technical fundamentals, in that order.
