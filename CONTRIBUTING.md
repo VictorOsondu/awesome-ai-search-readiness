@@ -25,13 +25,15 @@ A resource is a good fit if **all** of these are true:
 
 Each entry is a single line:
 
-```
-- [Title](https://url) — Description ending with a period. `[tag]` `[tag]`
+```markdown
+- [Title](https://url) - Description ending with a period. `[tag]` `[tag]`.
 ```
 
 Rules:
+
 - Description ≤ 18 words
-- End the description with a period
+- Description starts with an uppercase character and ends with a period (after any trailing tags)
+- Separator between link and description is `space hyphen space` (` - `), not an em-dash
 - Tags in backticks where useful: `[paid]`, `[requires signup]`, `[community]`, `[2026]`, `[2025]`, `[uk]`
 - One blank line between subsections
 - Alphabetical within a subsection unless a deliberate reading order is documented
