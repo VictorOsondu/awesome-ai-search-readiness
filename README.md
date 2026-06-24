@@ -168,6 +168,7 @@ Tools you can actually run. Free first, paid clearly labelled. Inclusion is not 
 - [LLMrefs AI Crawlability Checker](https://llmrefs.com/tools/ai-crawl-checker) - Free crawl test that shows the actual text GPTBot extracts after JS is stripped.
 - [SiteTest.ai](https://sitetest.ai/) - Free A–F GEO grade across 168 checks. Paid tiers from $4.99 add per-platform scores. Verify still live.
 - [Firecrawl llms.txt generator](https://llmstxt.firecrawl.dev/) - Free, open-source generator for `llms.txt` and `llms-full.txt`.
+- [NotFair](https://github.com/nowork-studio/NotFair) - Open-source Claude Code skills for SEO/GEO/AEO. Reads live data from Google Ads, Meta Ads, Search Console, and GA4 via MCP, and runs audits and fixes from the terminal. `[free]` `[open-source]`
 - [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/) - UK-built desktop crawler. Spoofs AI bot user-agents; free up to 500 URLs, £199/year above. `[uk]` `[paid]`.
 
 ## Communities & Newsletters
