@@ -4,8 +4,6 @@ Resources for making websites discoverable inside AI-generated answers from Chat
 
 Also known as **GEO** (Generative Engine Optimisation), **AEO** (Answer Engine Optimisation), **LLMO** (LLM Optimisation), or **LLM SEO**. See the Terminology section below for what each term means.
 
-Curated by Victor Osondu. Anti-hype. Evidence-first.
-
 Search is splitting in two. A growing share of buyer questions never reach a search results page — they end at an AI-generated answer with two or three citations. Most existing advice on this comes from vendors selling monitoring dashboards. A dashboard tells you you're invisible. It does not tell you what to fix. This list is biased toward resources that move you from monitoring the problem to fixing it. The bar for inclusion is high. The bar for the **Anti-Patterns** section is honest.
 
 Start with **Foundations** if AI search is a new lens for you. Read **Anti-Patterns & Myths** before you spend money on tools. **Citation Tracking** and **Tools** are last on purpose — measurement matters less than the underlying fixes.
@@ -119,18 +117,30 @@ Academic papers, benchmarks, and studies. The antidote to vendor-claim inflation
 - [GEO: Generative Engine Optimization (Aggarwal et al., KDD 2024)](https://arxiv.org/abs/2311.09735) - Princeton-led paper that coined the field. Reports up to **40%** visibility uplift, not the widely-misquoted 115%.
 - [Evaluating Verifiability in Generative Search Engines](https://arxiv.org/abs/2304.09848) - Stanford audit (Liu, Zhang, Liang, EMNLP 2023): only 51.5% of generated sentences are fully supported by their citations.
 - [GEO-Bench dataset](https://huggingface.co/datasets/GEO-Optim/geo-bench) - 10k-query open benchmark behind the Princeton paper. Run your own experiments.
+- [GEO-Optim/GEO reference implementation](https://github.com/GEO-optim/GEO) - The Princeton paper's official code and benchmark harness. Reproduce the numbers rather than trusting them. `[2024]`.
 - [CC-GSEO-Bench: A Content-Centric Benchmark](https://arxiv.org/abs/2509.05607) - Creator-centric successor benchmark (Chen et al., 2025) scoring sources on exposure, credit, impact, readability, trust.
+- [AutoGEO](https://github.com/cxcscmu/AutoGEO) - CMU framework (ICLR 2026) that learns engine preferences and rewrites content. Research-grade; don't aim it at production. `[2026]`.
 - [The crawl-to-click gap](https://blog.cloudflare.com/crawlers-click-ai-bots-training/) - Cloudflare network-level data: Anthropic crawled ~38,000 pages per referral in July 2025.
 - [Google users are less likely to click on links when an AI summary appears](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) - Pew Research panel (n=900): AI Overviews roughly halve click-through to traditional links (8% vs 15%).
+- [Awesome-GEO](https://github.com/DavidHuji/Awesome-GEO) - Community-curated bibliography of GEO research: ranking manipulation, multi-source corroboration, open protocols. A map of the literature. `[community]`.
 
 ## Case Studies
 
 Real, verifiable examples of brands gaining or losing AI visibility — with enough detail to learn from.
 
-This section is deliberately short. Indie engineering writeups with dated screenshots barely exist in this category yet; vendor "case studies" don't clear the bar. The strongest sources right now are regulatory filings, court documents, and earnings-call acknowledgements — places where the evidentiary cost of lying is high enough to trust the numbers. PRs welcome when this changes.
+This section is deliberately short. Indie engineering writeups with dated screenshots barely exist in this category yet; vendor "case studies" don't clear the bar. The strongest sources right now are regulatory filings, court documents, earnings calls, and first-party numbers from named operators — places where the evidentiary cost of lying is high enough to trust the numbers. One caveat on the gains: when a company reports its own growth figures, trust the direction more than the magnitude. PRs welcome when better sources appear.
 
-- [DMG Media submission to the UK CMA on Google's AI Overviews](https://assets.publishing.service.gov.uk/media/68a5aa50a6acbbc7fb96a3b2/DMG_Media.pdf) - UK regulator submission: desktop CTR fell from 25.2% to 2.8% (−89%) when an AI Overview appears. `[uk]`.
+### Gains
+
+- [Shopify Q1 2026 earnings call](https://www.fool.com/earnings/call-transcripts/2026/05/05/shopify-shop-q1-2026-earnings-transcript/) - AI-driven traffic up 8× YoY, orders from AI searches up ~13×; structured catalog data converts 2× better.
+- [Vercel: ChatGPT referral share of new signups](https://x.com/rauchg/status/1910093634445422639) - CEO's first-party numbers: under 1% of signups in September 2024, 4.8% by March 2025, 10% by April.
+
+### Losses
+
 - [Chegg, Inc. v. Google LLC — antitrust complaint](https://www.courtlistener.com/docket/69668109/chegg-inc-v-google-llc/) - Chegg's lawsuit attributes a 49% YoY drop in non-subscriber traffic (Jan 2024 → Jan 2025) to AI Overviews.
+- [DMG Media submission to the UK CMA on Google's AI Overviews](https://assets.publishing.service.gov.uk/media/68a5aa50a6acbbc7fb96a3b2/DMG_Media.pdf) - UK regulator submission: desktop CTR fell from 25.2% to 2.8% (−89%) when an AI Overview appears. `[uk]`.
+- [Penske Media Corporation v. Google LLC — antitrust complaint](https://www.courtlistener.com/docket/71332589/penske-media-corporation-v-google-llc/) - Rolling Stone and Variety owner's federal filing: affiliate revenue down more than a third since AI Overviews scaled.
+- [Stack Overflow is almost dead](https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/) - Gergely Orosz charts Stack Overflow's own data: monthly questions back at 2009 launch levels by May 2025.
 
 ## Platform-Specific Guides
 
@@ -169,6 +179,16 @@ Tools you can actually run. Free first, paid clearly labelled. Inclusion is not 
 - [SiteTest.ai](https://sitetest.ai/) - Free A–F GEO grade across 168 checks. Paid tiers from $4.99 add per-platform scores. Verify still live.
 - [Firecrawl llms.txt generator](https://llmstxt.firecrawl.dev/) - Free, open-source generator for `llms.txt` and `llms-full.txt`.
 - [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/) - UK-built desktop crawler. Spoofs AI bot user-agents; free up to 500 URLs, £199/year above. `[uk]` `[paid]`.
+
+### Open-Source
+
+Repos you can read, run, and fork. Vetted for a real licence, recent commits, and a core function that works without a paid key. Self-hosted monitoring exists but is mostly immature — audit-and-fix tooling clears the bar more often than dashboards.
+
+- [eGEOagents](https://github.com/mverab/eGEOagents) - CLI and Claude Code toolkit for content audits, rewrites, and JSON-LD; its ranking score is a stated proxy. `[2026]`.
+- [Gego](https://github.com/AI2HU/gego) - Self-hosted GEO tracker: scheduled prompts across OpenAI, Anthropic, Gemini, Perplexity, and Ollama, with a citation dashboard. `[2026]`.
+- [GEO Optimizer Skill](https://github.com/Auriti-Labs/geo-optimizer-skill) - Audits AI visibility and tracks whether ChatGPT, Perplexity, Gemini, and AI Overviews cite you; CLI, Python, MCP. `[2026]`.
+- [nuxt-llms](https://github.com/nuxt-content/nuxt-llms) - Official Nuxt module that auto-generates `llms.txt` and `llms-full.txt` from your site content. `[2026]`.
+- [vitepress-plugin-llms](https://github.com/okineadev/vitepress-plugin-llms) - Generates `llms.txt` and LLM-friendly Markdown output for VitePress documentation sites. `[2026]`.
 
 ## Communities & Newsletters
 
@@ -218,4 +238,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Opinionated curation, vendor pitches c
 
 ## Footnotes
 
-Curated by Victor Osondu, founder of [AI Tutorium](https://aitutorium.com) and director of [Arnet Digital](https://arnet.co.uk). Victor audits websites for AI search readiness as a paid service — the audit is listed under Visibility Auditing above. The audit and this list share a methodology: structured data, citation-friendly content, technical fundamentals, in that order.
+Curated by Victor Osondu, founder of [AI Tutorium](https://aitutorium.com). Victor audits websites for AI search readiness as a paid service — the audit is listed under Visibility Auditing above. The audit and this list share a methodology: structured data, citation-friendly content, technical fundamentals, in that order.
