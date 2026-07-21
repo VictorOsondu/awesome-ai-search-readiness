@@ -1,6 +1,6 @@
 # Awesome AI Search Readiness [![Awesome](https://awesome.re/badge-flat2.svg)](https://github.com/sindresorhus/awesome)
 
-Resources for making websites discoverable inside AI-generated answers from ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.
+Making websites discoverable inside AI-generated answers from ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.
 
 Also known as **GEO** (Generative Engine Optimisation), **AEO** (Answer Engine Optimisation), **LLMO** (LLM Optimisation), or **LLM SEO**. See the Terminology section below for what each term means.
 
