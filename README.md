@@ -106,7 +106,7 @@ The category is hot, not dormant. Every major name has shipped product and raise
 
 Methodologies, frameworks, and checklists for auditing a site's AI search readiness — including the curator's own service.
 
-- [Website & AI Search Readiness Audit](https://contra.com/VictorOsondu/) - Curator's paid audit. Listed for transparency, not as a recommendation over alternatives. `[paid]`.
+- [Website & AI Search Readiness Audit](https://contra.com/VictorOsondu) - Curator's paid audit. Listed for transparency, not as a recommendation over alternatives. `[paid]`.
 - [AI Search Content Optimization Checklist](https://www.aleydasolis.com/en/ai-search/ai-search-optimization-checklist/) - Aleyda Solís's free Google Sheet covering crawlability, chunks, citation-worthiness, measurement. Updated April 2026.
 - [The AI Search Manual](https://ipullrank.com/ai-search-manual) - Mike King's book-length open manual on Relevance Engineering. Free to read.
 
@@ -165,12 +165,12 @@ Bing's index powers Copilot *and* ChatGPT's web search, so Bing visibility is up
 
 ### Claude (Anthropic)
 
-- [Anthropic: Claude can now search the web](https://www.anthropic.com/news/web-search) - Announcement and behaviour notes for Claude's web search.
+- [Anthropic: Claude can now search the web](https://claude.com/blog/web-search) - Announcement and behaviour notes for Claude's web search.
 - [How Claude Picks Sources: a technical breakdown](https://www.oltre.ai/blog/how-claude-picks-sources-technical-breakdown-claude-citations/) - Analysis showing 86.7% overlap between Claude citations and Brave Search results — Brave visibility is the gating factor.
 
 ### Google Gemini & AI Overviews
 
-- [Google Search: Generative AI in Search](https://blog.google/products/search/generative-ai-google-search-may-2024/) - Google's framing of how AI Overviews integrate with classical search.
+- [Google Search: Generative AI in Search](https://blog.google/products-and-platforms/products/search/generative-ai-google-search-may-2024/) - Google's framing of how AI Overviews integrate with classical search.
 - [How AI Mode Works and How SEO Can Prepare](https://ipullrank.com/how-ai-mode-works) - Mike King reads the Google patents behind AI Mode: query fan-out, passage-level retrieval, ranking. Patent-grounded, not vibes-grounded.
 
 ## Tools & Software
