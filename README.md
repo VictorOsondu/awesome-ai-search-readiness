@@ -151,6 +151,13 @@ How each major answer engine selects, cites, and ranks sources — straight from
 - [OpenAI: ChatGPT search](https://openai.com/index/introducing-chatgpt-search/) - OpenAI's official explanation of how ChatGPT search retrieves and cites web content.
 - [AI Search Architecture Deep Dive](https://ipullrank.com/ai-search-manual/search-architecture) - iPullRank's architectural teardown of ChatGPT, Bing Copilot, Perplexity, and Gemini retrieval pipelines. Includes diagrams.
 
+### Microsoft Bing & Copilot
+
+Bing's index powers Copilot *and* ChatGPT's web search, so Bing visibility is upstream of both. This is the one engine that reports your AI citations first-party.
+
+- [Bing Webmaster Tools: AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) - Microsoft's first-party data on when Copilot and Bing AI answers cite your pages, plus the queries that grounded them. `[2026]`.
+- [Keeping content discoverable with sitemaps in AI-powered search](https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search) - Bing's own guidance on staying crawlable and fresh for the index behind Copilot and ChatGPT. `[2025]`.
+
 ### Perplexity
 
 - [Perplexity Hub: FAQ](https://www.perplexity.ai/hub/faq) - Official answers on sources, citations, and how content is ranked.

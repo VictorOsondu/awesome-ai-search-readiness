@@ -4,4 +4,4 @@ This project follows the [Contributor Covenant v2.1](https://www.contributor-cov
 
 In short: be kind, assume good faith, disagree on substance not on people. Vendor pitches dressed as contributions will be closed without drama — that's curation, not a moral judgement.
 
-Report concerns privately by email to <info@arnet.co.uk>.
+Report concerns privately by email to <hello@aitutorium.com>.
