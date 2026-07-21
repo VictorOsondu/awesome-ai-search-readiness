@@ -118,9 +118,8 @@ The category is hot, not dormant. Every major name has shipped product and raise
 
 ## Visibility Auditing
 
-Methodologies, frameworks, and checklists for auditing a site's AI search readiness — including the curator's own service.
+Methodologies, frameworks, and checklists for auditing a site's AI search readiness.
 
-- [Website & AI Search Readiness Audit](https://contra.com/VictorOsondu) - Curator's paid audit. Listed for transparency, not as a recommendation over alternatives. `[paid]`.
 - [AI Search Content Optimization Checklist](https://www.aleydasolis.com/en/ai-search/ai-search-optimization-checklist/) - Aleyda Solís's free Google Sheet covering crawlability, chunks, citation-worthiness, measurement. Updated April 2026.
 - [The AI Search Manual](https://ipullrank.com/ai-search-manual) - Mike King's book-length open manual on Relevance Engineering. Free to read.
 
@@ -262,4 +261,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Opinionated curation, vendor pitches c
 
 ## Footnotes
 
-Curated by Victor Osondu, founder of [AI Tutorium](https://aitutorium.com). Victor audits websites for AI search readiness as a paid service — the audit is listed under Visibility Auditing above. The audit and this list share a methodology: structured data, citation-friendly content, technical fundamentals, in that order.
+Curated by Victor Osondu, founder of [AI Tutorium](https://aitutorium.com). The list follows one methodology throughout: structured data, citation-friendly content, technical fundamentals, in that order.
