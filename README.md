@@ -2,7 +2,9 @@
 
 Making websites discoverable inside AI-generated answers from ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.
 
-![The AI Search Readiness Stack: six layers that decide whether AI answer engines find, trust, and cite your content — crawlable, understandable, extractable, trustworthy, cite-worthy, measured. Each layer builds on the one before it.](ai-search-readiness-stack.png)
+<p align="center">
+	<img width="1740" alt="The AI Search Readiness Stack: six layers that decide whether AI answer engines find, trust, and cite your content — crawlable, understandable, extractable, trustworthy, cite-worthy, measured. Each layer builds on the one before it." src="ai-search-readiness-stack.png">
+</p>
 
 Also known as **GEO** (Generative Engine Optimisation), **AEO** (Answer Engine Optimisation), **LLMO** (LLM Optimisation), or **LLM SEO**. See the Terminology section below for what each term means.
 
