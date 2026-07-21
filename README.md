@@ -2,6 +2,8 @@
 
 Making websites discoverable inside AI-generated answers from ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.
 
+![The AI Search Readiness Stack: six layers that decide whether AI answer engines find, trust, and cite your content — crawlable, understandable, extractable, trustworthy, cite-worthy, measured. Each layer builds on the one before it.](ai-search-readiness-stack.png)
+
 Also known as **GEO** (Generative Engine Optimisation), **AEO** (Answer Engine Optimisation), **LLMO** (LLM Optimisation), or **LLM SEO**. See the Terminology section below for what each term means.
 
 Search is splitting in two. A growing share of buyer questions never reach a search results page — they end at an AI-generated answer with two or three citations. Most existing advice on this comes from vendors selling monitoring dashboards. A dashboard tells you you're invisible. It does not tell you what to fix. This list is biased toward resources that move you from monitoring the problem to fixing it. The bar for inclusion is high. The bar for the **Anti-Patterns** section is honest.
@@ -17,6 +19,7 @@ Tags: `[paid]` `[requires signup]` `[community]` `[2026]` `[2025]` `[uk]`.
 - [Standards & Protocols](#standards--protocols)
 - [Content Structure](#content-structure)
 - [Technical Optimisation](#technical-optimisation)
+- [AI Crawlers & Access Control](#ai-crawlers--access-control)
 - [Citation Tracking](#citation-tracking)
 - [Visibility Auditing](#visibility-auditing)
 - [Research & Evidence](#research--evidence)
@@ -60,7 +63,7 @@ The machine-readable layer. If AI tools cannot parse your site, no amount of cle
 
 - [Schema.org](https://schema.org/) - The vocabulary that lets you describe your business, content, and offerings in a way machines can read.
 - [Schema.org / Article](https://schema.org/Article) - Markup for written content. Pair with `author`, `datePublished`, and `publisher` properties.
-- [Schema.org / FAQPage](https://schema.org/FAQPage) - Marks up question-and-answer content. Often the highest-impact single change on a content site.
+- [Schema.org / FAQPage](https://schema.org/FAQPage) - Marks up first-party question-and-answer content. Google now limits FAQ rich results to authoritative health and government sites, so treat it as structural clarity, not a visibility win — see Anti-Patterns.
 - [Schema.org / Organization](https://schema.org/Organization) - Tells AI tools what your business actually is, in machine-readable form.
 - [Google: Structured data documentation](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data) - Reference for which schema types Google's pipeline actually consumes.
 - [Google: Rich Results Test](https://search.google.com/test/rich-results) - Paste a URL or markup, get back what Google's parser sees. Use before and after every change.
@@ -88,6 +91,15 @@ The unsexy fundamentals. AI crawlers and classical crawlers fail on the same thi
 - [The rise of the AI crawler](https://vercel.com/blog/the-rise-of-the-ai-crawler) - Vercel + MERJ 500M-fetch dataset: GPTBot, ClaudeBot, PerplexityBot fetch JavaScript but never execute it.
 - [AI Search and JavaScript Rendering — case study](https://www.gsqi.com/marketing-blog/ai-search-javascript-rendering/) - Glenn Gabe runs prompts at ChatGPT, Perplexity, and Claude against a JS-rendered site. None can read it.
 
+## AI Crawlers & Access Control
+
+Who you let in, and how you tell them apart in your logs. Blocking the training crawlers protects your content but can also drop you out of the answer engines that send referrals — and since training and search are usually *different* user-agents from the same vendor, you can allow one and refuse the other.
+
+- [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt) - Community-maintained master list of AI crawler user-agents, auto-generated into a drop-in `robots.txt` plus Nginx, Apache, and Caddy configs. Also the reference for spotting these bots in server logs.
+- [Anthropic: crawling and how to block it](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) - First-party rules for ClaudeBot (training), Claude-User, and Claude-SearchBot, each controllable separately in `robots.txt`.
+- [Google: list of Google's common crawlers](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers) - Defines Google-Extended, the token that opts content out of Gemini training without affecting Search ranking.
+- [OpenAI: overview of crawlers](https://developers.openai.com/api/docs/bots) - First-party spec for GPTBot (training) versus OAI-SearchBot (ChatGPT search). Block one, keep the other — they are different user-agents.
+
 ## Citation Tracking
 
 Tools that monitor whether ChatGPT, Perplexity, Claude, or Gemini cite your site for relevant queries. Useful for measurement; not a substitute for the underlying fixes.
@@ -101,6 +113,8 @@ The category is hot, not dormant. Every major name has shipped product and raise
 - [Otterly.AI](https://otterly.ai/) - Continuous monitoring across the major AI engines. Transparent pricing from $29/mo. `[paid]` `[requires signup]`.
 - [Peec AI](https://peec.ai/) - Prompt-based tracking with multi-region and Looker support. From €85/mo. `[paid]` `[requires signup]`.
 - [AthenaHQ](https://athenahq.ai/) - YC-backed AEO platform across 8+ engines with prompt-volume estimation. From $95/mo annual. `[paid]` `[requires signup]`.
+- [Google Search Console: generative AI performance reports](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports) - First-party impressions and clicks from AI Overviews and AI Mode, separated from regular Search. Free, launched June 2026. `[2026]`.
+- [Tracking AI traffic in GA4: setup and regex patterns](https://www.swydo.com/blog/track-ai-traffic-in-ga4/) - Free DIY method: a custom channel group that splits ChatGPT, Perplexity, and Gemini referrals out of the generic "Referral" bucket. Honest that analytics undercount the real number.
 
 ## Visibility Auditing
 
@@ -150,6 +164,7 @@ How each major answer engine selects, cites, and ranks sources — straight from
 
 - [OpenAI: ChatGPT search](https://openai.com/index/introducing-chatgpt-search/) - OpenAI's official explanation of how ChatGPT search retrieves and cites web content.
 - [AI Search Architecture Deep Dive](https://ipullrank.com/ai-search-manual/search-architecture) - iPullRank's architectural teardown of ChatGPT, Bing Copilot, Perplexity, and Gemini retrieval pipelines. Includes diagrams.
+- [OpenAI: product feed specification](https://developers.openai.com/commerce/specs/file-upload/products) - Official schema for feeding products into ChatGPT with live price and availability. The e-commerce counterpart to a sitemap. `[2026]`.
 
 ### Microsoft Bing & Copilot
 
@@ -172,6 +187,7 @@ Bing's index powers Copilot *and* ChatGPT's web search, so Bing visibility is up
 
 - [Google Search: Generative AI in Search](https://blog.google/products-and-platforms/products/search/generative-ai-google-search-may-2024/) - Google's framing of how AI Overviews integrate with classical search.
 - [How AI Mode Works and How SEO Can Prepare](https://ipullrank.com/how-ai-mode-works) - Mike King reads the Google patents behind AI Mode: query fan-out, passage-level retrieval, ranking. Patent-grounded, not vibes-grounded.
+- [Google: optimizing for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) - Google's own July 2026 guide. Its blunt thesis: there is no separate GEO discipline — the same crawlable, helpful, structured-content fundamentals feed AI Overviews and AI Mode. `[2026]`.
 
 ## Tools & Software
 
@@ -233,7 +249,7 @@ A whitepaper from a tool company showing that their tool helps is not evidence. 
 Schema is necessary infrastructure but does not, on its own, move AI citations on pages already established enough to rank. [Ahrefs ran a difference-in-differences on 1,885 pages adding schema](https://ahrefs.com/blog/schema-ai-citations/) between August 2025 and March 2026 — Google AI Overview citations fell 4.6%, AI Mode and ChatGPT moved 2.4% and 2.2%, both statistically indistinguishable from zero. Audits keep turning up pages with perfect FAQPage markup that don't get cited, and pages with no schema at all that do. Schema makes you eligible. The content beneath it decides whether you're chosen.
 
 **"Block AI crawlers to protect your content."**
-Blocking AI crawlers protects you from being trained on; it also makes you invisible to the AI search engines your buyers now use. [Cloudflare flipped its default to block AI crawlers on 1 July 2025](https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/), and most site owners who clicked that toggle did so without realising that `OAI-SearchBot`, `PerplexityBot`, and `Google-Extended` do retrieval for live answers, not training. You can refuse training and still allow citation — but only if you read your robots.txt carefully and know which user-agent does which job. The right posture is policy, not panic.
+Blocking AI crawlers protects you from being trained on; it also makes you invisible to the AI search engines your buyers now use. [Cloudflare flipped its default to block AI crawlers on 1 July 2025](https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/), and most site owners who clicked that toggle did so without realising that `OAI-SearchBot` and `PerplexityBot` do retrieval for live answers, not training — block them and you vanish from those engines. Google is the inverse: `Google-Extended` governs only Gemini training, while `Googlebot` feeds AI Overviews, so refusing Google-Extended is safe for Search. You can refuse training and still allow citation — but only if you read your robots.txt carefully and know which user-agent does which job. The right posture is policy, not panic.
 
 **"Long-form content always wins."**
 AI engines cite sections, not posts — extractable structure beats word count. [Ahrefs' analysis of 560,000+ AI Overviews](https://ahrefs.com/blog/short-vs-long-content-in-ai-overviews/) found 53.4% of citations go to pages under 1,000 words; the correlation between word count and citation position is effectively zero. The model isn't reading your essay; it's scanning for a chunk that answers a question without needing the chunks around it. A well-structured 800-word piece routinely outperforms a meandering 3,000-word one. The reason is mechanical, not aesthetic.
