@@ -210,6 +210,7 @@ Repos you can read, run, and fork. Vetted for a real licence, recent commits, an
 
 - [eGEOagents](https://github.com/mverab/eGEOagents) - CLI and Claude Code toolkit for content audits, rewrites, and JSON-LD; its ranking score is a stated proxy. `[2026]`.
 - [Gego](https://github.com/AI2HU/gego) - Self-hosted GEO tracker: scheduled prompts across OpenAI, Anthropic, Gemini, Perplexity, and Ollama, with a citation dashboard. `[2026]`.
+- [GEO/AEO Tracker](https://github.com/danishashko/geo-aeo-tracker) - Self-hosted Next.js dashboard tracking brand visibility across ChatGPT, Perplexity, Gemini, Copilot, Google AI Overview, and Grok; local-first (IndexedDB), optional Supabase sync. Needs Bright Data and OpenRouter API keys to run. `[2026]`.
 - [GEO Optimizer Skill](https://github.com/Auriti-Labs/geo-optimizer-skill) - Audits AI visibility and tracks whether ChatGPT, Perplexity, Gemini, and AI Overviews cite you; CLI, Python, MCP. `[2026]`.
 - [NotFair](https://github.com/nowork-studio/NotFair) - Marketing-agent suite whose `geo-optimizer` skill scores content 0–100 and rewrites it for AI citation. `[2026]`.
 - [nuxt-llms](https://github.com/nuxt-content/nuxt-llms) - Official Nuxt module that auto-generates `llms.txt` and `llms-full.txt` from your site content. `[2026]`.
