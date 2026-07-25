@@ -3,12 +3,12 @@
 Making websites discoverable inside AI-generated answers from ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.
 
 <p align="center">
-	<img width="1740" alt="The AI Search Readiness Stack: six layers that decide whether AI answer engines find, trust, and cite your content — crawlable, understandable, extractable, trustworthy, cite-worthy, measured. Each layer builds on the one before it." src="ai-search-readiness-stack.png">
+  <img width="1740" alt="The AI Search Readiness Stack: six layers that decide whether AI answer engines find, trust, and cite your content — crawlable, understandable, extractable, trustworthy, cite-worthy, measured. Each layer builds on the one before it." src="ai-search-readiness-stack.png">
 </p>
 
 Also known as **GEO** (Generative Engine Optimisation), **AEO** (Answer Engine Optimisation), **LLMO** (LLM Optimisation), or **LLM SEO**. See the Terminology section below for what each term means.
 
-Search is splitting in two. A growing share of buyer questions never reach a search results page — they end at an AI-generated answer with two or three citations. Most existing advice on this comes from vendors selling monitoring dashboards. A dashboard tells you you're invisible. It does not tell you what to fix. This list is biased toward resources that move you from monitoring the problem to fixing it. The bar for inclusion is high. The bar for the **Anti-Patterns** section is honest.
+AI-generated answers now sit alongside conventional search results, and they cite only a handful of sources. Much of the advice on this comes from vendors selling monitoring dashboards. A dashboard tells you you're invisible. It doesn't tell you what to fix. This list favours resources that move you from monitoring the problem to fixing it.
 
 Start with **Foundations** if AI search is a new lens for you. Read **Anti-Patterns & Myths** before you spend money on tools. **Citation Tracking** and **Tools** are last on purpose — measurement matters less than the underlying fixes.
 
@@ -65,7 +65,7 @@ The machine-readable layer. If AI tools cannot parse your site, no amount of cle
 
 - [Schema.org](https://schema.org/) - The vocabulary that lets you describe your business, content, and offerings in a way machines can read.
 - [Schema.org / Article](https://schema.org/Article) - Markup for written content. Pair with `author`, `datePublished`, and `publisher` properties.
-- [Schema.org / FAQPage](https://schema.org/FAQPage) - Marks up first-party question-and-answer content. Google now limits FAQ rich results to authoritative health and government sites, so treat it as structural clarity, not a visibility win — see Anti-Patterns.
+- [Schema.org / FAQPage](https://schema.org/FAQPage) - Question-and-answer markup; use for structure, not guaranteed visibility.
 - [Schema.org / Organization](https://schema.org/Organization) - Tells AI tools what your business actually is, in machine-readable form.
 - [Google: Structured data documentation](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data) - Reference for which schema types Google's pipeline actually consumes.
 - [Google: Rich Results Test](https://search.google.com/test/rich-results) - Paste a URL or markup, get back what Google's parser sees. Use before and after every change.
@@ -97,7 +97,7 @@ The unsexy fundamentals. AI crawlers and classical crawlers fail on the same thi
 
 Who you let in, and how you tell them apart in your logs. Blocking the training crawlers protects your content but can also drop you out of the answer engines that send referrals — and since training and search are usually *different* user-agents from the same vendor, you can allow one and refuse the other.
 
-- [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt) - Community-maintained master list of AI crawler user-agents, auto-generated into a drop-in `robots.txt` plus Nginx, Apache, and Caddy configs. Also the reference for spotting these bots in server logs.
+- [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt) - Community-maintained AI crawler list with generated server configurations.
 - [Anthropic: crawling and how to block it](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) - First-party rules for ClaudeBot (training), Claude-User, and Claude-SearchBot, each controllable separately in `robots.txt`.
 - [Google: list of Google's common crawlers](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers) - Defines Google-Extended, the token that opts content out of Gemini training without affecting Search ranking.
 - [OpenAI: overview of crawlers](https://developers.openai.com/api/docs/bots) - First-party spec for GPTBot (training) versus OAI-SearchBot (ChatGPT search). Block one, keep the other — they are different user-agents.
@@ -106,17 +106,17 @@ Who you let in, and how you tell them apart in your logs. Blocking the training 
 
 Tools that monitor whether ChatGPT, Perplexity, Claude, or Gemini cite your site for relevant queries. Useful for measurement; not a substitute for the underlying fixes.
 
-The category is hot, not dormant. Every major name has shipped product and raised funding in 2025–2026. The dividing line is now pricing transparency rather than capability: several well-funded enterprise tools (Profound, Bluefish, Goodie, Conductor) have pulled public tiers and gone contact-sales-only. They are real products; they are not listed because the audience for this list cannot use them. Stick to the tools where you can read the price.
+This section includes tools with public access or pricing. Contact-sales-only enterprise products are out of scope: you can't read the price before you enquire.
 
-*Pricing and supported engines verified May 2026.*
+*Pricing and supported engines last reviewed July 2026; verify before purchase.*
 
 - [HubSpot AI Search Grader](https://www.hubspot.com/aeo-grader/ai-search-tool) - Free, no-signup diagnostic showing how ChatGPT, Perplexity, and Gemini describe your brand.
 - [Ahrefs AI Visibility Checker](https://ahrefs.com/ai-visibility-checker) - Free check across ChatGPT, Gemini, Perplexity, Copilot, and AI Overviews. No signup; paid from $398/mo.
 - [Otterly.AI](https://otterly.ai/) - Continuous monitoring across the major AI engines. Transparent pricing from $29/mo. `[paid]` `[requires signup]`.
 - [Peec AI](https://peec.ai/) - Prompt-based tracking with multi-region and Looker support. From €85/mo. `[paid]` `[requires signup]`.
-- [AthenaHQ](https://athenahq.ai/) - YC-backed AEO platform across 8+ engines with prompt-volume estimation. From $95/mo annual. `[paid]` `[requires signup]`.
-- [Google Search Console: generative AI performance reports](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports) - First-party impressions and clicks from AI Overviews and AI Mode, separated from regular Search. Free, launched June 2026. `[2026]`.
-- [Tracking AI traffic in GA4: setup and regex patterns](https://www.swydo.com/blog/track-ai-traffic-in-ga4/) - Free DIY method: a custom channel group that splits ChatGPT, Perplexity, and Gemini referrals out of the generic "Referral" bucket. Honest that analytics undercount the real number.
+- [AthenaHQ](https://athenahq.ai/) - AEO monitoring with a free entry tier; paid Starter listed at $295/month. `[paid]` `[requires signup]`.
+- [Google Search Console: generative AI performance reports](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports) - Dedicated AI-feature impressions by page, country, device, and date; limited rollout. `[2026]`.
+- [Tracking AI traffic in GA4: setup and regex patterns](https://www.swydo.com/blog/track-ai-traffic-in-ga4/) - DIY channel grouping for ChatGPT, Perplexity, and Gemini referrals.
 
 ## Visibility Auditing
 
@@ -130,7 +130,7 @@ Methodologies, frameworks, and checklists for auditing a site's AI search readin
 Academic papers, benchmarks, and studies. The antidote to vendor-claim inflation. Where a study is cited often but the original is hard to find, link the original — not the explainer.
 
 - [GEO: Generative Engine Optimization (Aggarwal et al., KDD 2024)](https://arxiv.org/abs/2311.09735) - Princeton-led paper that coined the field. Reports up to **40%** visibility uplift, not the widely-misquoted 115%.
-- [Evaluating Verifiability in Generative Search Engines](https://arxiv.org/abs/2304.09848) - Stanford audit (Liu, Zhang, Liang, EMNLP 2023): only 51.5% of generated sentences are fully supported by their citations.
+- [Evaluating Verifiability in Generative Search Engines](https://arxiv.org/abs/2304.09848) - EMNLP 2023 audit: 51.5% of generated sentences were fully citation-supported.
 - [GEO-Bench dataset](https://huggingface.co/datasets/GEO-Optim/geo-bench) - 10k-query open benchmark behind the Princeton paper. Run your own experiments.
 - [GEO-Optim/GEO reference implementation](https://github.com/GEO-optim/GEO) - The Princeton paper's official code and benchmark harness. Reproduce the numbers rather than trusting them. `[2024]`.
 - [CC-GSEO-Bench: A Content-Centric Benchmark](https://arxiv.org/abs/2509.05607) - Creator-centric successor benchmark (Chen et al., 2025) scoring sources on exposure, credit, impact, readability, trust.
@@ -169,10 +169,10 @@ How each major answer engine selects, cites, and ranks sources — straight from
 
 ### Microsoft Bing & Copilot
 
-Bing's index powers Copilot *and* ChatGPT's web search, so Bing visibility is upstream of both. This is the one engine that reports your AI citations first-party.
+Bing documents how its own index supports Copilot. OpenAI says ChatGPT search uses OAI-SearchBot alongside third-party search providers, without naming one exclusive upstream index.
 
-- [Bing Webmaster Tools: AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) - Microsoft's first-party data on when Copilot and Bing AI answers cite your pages, plus the queries that grounded them. `[2026]`.
-- [Keeping content discoverable with sitemaps in AI-powered search](https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search) - Bing's own guidance on staying crawlable and fresh for the index behind Copilot and ChatGPT. `[2025]`.
+- [Bing Webmaster Tools: AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) - First-party Copilot and Bing citation and grounding-query data. `[2026]`.
+- [Keeping content discoverable with sitemaps in AI-powered search](https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search) - Bing guidance on crawlability and freshness for AI-powered search. `[2025]`.
 
 ### Perplexity
 
@@ -188,7 +188,7 @@ Bing's index powers Copilot *and* ChatGPT's web search, so Bing visibility is up
 
 - [Google Search: Generative AI in Search](https://blog.google/products-and-platforms/products/search/generative-ai-google-search-may-2024/) - Google's framing of how AI Overviews integrate with classical search.
 - [How AI Mode Works and How SEO Can Prepare](https://ipullrank.com/how-ai-mode-works) - Mike King reads the Google patents behind AI Mode: query fan-out, passage-level retrieval, ranking. Patent-grounded, not vibes-grounded.
-- [Google: optimizing for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) - Google's own July 2026 guide. Its blunt thesis: there is no separate GEO discipline — the same crawlable, helpful, structured-content fundamentals feed AI Overviews and AI Mode. `[2026]`.
+- [Google: optimizing for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) - Google's July 2026 guidance for AI Overviews and AI Mode. `[2026]`.
 
 ## Tools & Software
 
@@ -200,7 +200,7 @@ Tools you can actually run. Free first, paid clearly labelled. Inclusion is not 
 - [AI Crawler Simulator](https://keyword.com/ai-crawler-simulator/) - Free, no-signup tool that hits your URL with the user-agents of 12 AI crawlers. Returns per-bot status codes.
 - [CrawlerCheck](https://crawlercheck.com/) - Free analyser of robots.txt, meta robots, and X-Robots-Tag. Tests configuration; complements AI Crawler Simulator.
 - [LLMrefs AI Crawlability Checker](https://llmrefs.com/tools/ai-crawl-checker) - Free crawl test that shows the actual text GPTBot extracts after JS is stripped.
-- [SiteTest.ai](https://sitetest.ai/) - Free A–F GEO grade across 168 checks. Paid tiers from $4.99 add per-platform scores. Verify still live.
+- [SiteTest.ai](https://sitetest.ai/) - A–F GEO audit with free and paid tiers.
 - [Firecrawl llms.txt generator](https://llmstxt.firecrawl.dev/) - Free, open-source generator for `llms.txt` and `llms-full.txt`.
 - [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/) - UK-built desktop crawler. Spoofs AI bot user-agents; free up to 500 URLs, £199/year above. `[uk]` `[paid]`.
 
@@ -210,7 +210,7 @@ Repos you can read, run, and fork. Vetted for a real licence, recent commits, an
 
 - [eGEOagents](https://github.com/mverab/eGEOagents) - CLI and Claude Code toolkit for content audits, rewrites, and JSON-LD; its ranking score is a stated proxy. `[2026]`.
 - [Gego](https://github.com/AI2HU/gego) - Self-hosted GEO tracker: scheduled prompts across OpenAI, Anthropic, Gemini, Perplexity, and Ollama, with a citation dashboard. `[2026]`.
-- [GEO/AEO Tracker](https://github.com/danishashko/geo-aeo-tracker) - Self-hosted Next.js dashboard tracking brand visibility across ChatGPT, Perplexity, Gemini, Copilot, Google AI Overview, and Grok; local-first (IndexedDB), optional Supabase sync. Needs Bright Data and OpenRouter API keys to run. `[2026]`.
+- [GEO/AEO Tracker](https://github.com/danishashko/geo-aeo-tracker) - Self-hosted, local-first visibility dashboard; requires Bright Data and OpenRouter keys. `[2026]`.
 - [GEO Optimizer Skill](https://github.com/Auriti-Labs/geo-optimizer-skill) - Audits AI visibility and tracks whether ChatGPT, Perplexity, Gemini, and AI Overviews cite you; CLI, Python, MCP. `[2026]`.
 - [NotFair](https://github.com/nowork-studio/NotFair) - Marketing-agent suite whose `geo-optimizer` skill scores content 0–100 and rewrites it for AI citation. `[2026]`.
 - [nuxt-llms](https://github.com/nuxt-content/nuxt-llms) - Official Nuxt module that auto-generates `llms.txt` and `llms-full.txt` from your site content. `[2026]`.
