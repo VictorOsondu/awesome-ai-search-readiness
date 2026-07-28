@@ -8,9 +8,9 @@ Making websites discoverable inside AI-generated answers from ChatGPT, Perplexit
 
 Also known as **GEO** (Generative Engine Optimisation), **AEO** (Answer Engine Optimisation), **LLMO** (LLM Optimisation), or **LLM SEO**. See the Terminology section below for what each term means.
 
-AI-generated answers now sit alongside conventional search results, and they cite only a handful of sources. Much of the advice on this comes from vendors selling monitoring dashboards. A dashboard tells you you're invisible. It doesn't tell you what to fix. This list favours resources that move you from monitoring the problem to fixing it.
+AI-generated answers now sit alongside conventional search results, and each answer cites only a handful of sources. This list collects resources on how those citations are earned: crawler access, content structure, structured data, emerging standards, the research evidence, and the tools used to measure visibility.
 
-Start with **Foundations** if AI search is a new lens for you. Read **Anti-Patterns & Myths** before you spend money on tools. **Citation Tracking** and **Tools** are last on purpose — measurement matters less than the underlying fixes.
+Sections run roughly in order of dependency — Foundations and Standards first, Citation Tracking and Tools last.
 
 Tags: `[paid]` `[requires signup]` `[community]` `[2026]` `[2025]` `[uk]`.
 
@@ -132,7 +132,7 @@ Academic papers, benchmarks, and studies. The antidote to vendor-claim inflation
 - [GEO: Generative Engine Optimization (Aggarwal et al., KDD 2024)](https://arxiv.org/abs/2311.09735) - Princeton-led paper that coined the field. Reports up to **40%** visibility uplift, not the widely-misquoted 115%.
 - [Evaluating Verifiability in Generative Search Engines](https://arxiv.org/abs/2304.09848) - EMNLP 2023 audit: 51.5% of generated sentences were fully citation-supported.
 - [GEO-Bench dataset](https://huggingface.co/datasets/GEO-Optim/geo-bench) - 10k-query open benchmark behind the Princeton paper. Run your own experiments.
-- [GEO-Optim/GEO reference implementation](https://github.com/GEO-optim/GEO) - The Princeton paper's official code and benchmark harness. Reproduce the numbers rather than trusting them. `[2024]`.
+- [GEO-Optim/GEO reference implementation](https://github.com/GEO-optim/GEO) - Princeton paper's official code and benchmark harness. Reproduce the numbers rather than trusting them. `[2024]`.
 - [CC-GSEO-Bench: A Content-Centric Benchmark](https://arxiv.org/abs/2509.05607) - Creator-centric successor benchmark (Chen et al., 2025) scoring sources on exposure, credit, impact, readability, trust.
 - [AutoGEO](https://github.com/cxcscmu/AutoGEO) - CMU framework (ICLR 2026) that learns engine preferences and rewrites content. Research-grade; don't aim it at production. `[2026]`.
 - [The crawl-to-click gap](https://blog.cloudflare.com/crawlers-click-ai-bots-training/) - Cloudflare network-level data: Anthropic crawled ~38,000 pages per referral in July 2025.
