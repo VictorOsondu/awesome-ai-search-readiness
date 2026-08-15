@@ -8,6 +8,7 @@
   "globs": ["**/*.md"],
   "ignores": [
     "node_modules/**",
-    ".research/**"
+    ".research/**",
+    "docs/plans/**"
   ]
 }
