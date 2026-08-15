@@ -147,6 +147,7 @@ This section is deliberately short. Indie engineering writeups with dated screen
 
 ### Gains
 
+- [Shopify Q2 2026 earnings call](https://www.fool.com/earnings/call-transcripts/2026/08/12/shopify-shop-q2-2026-earnings-call-transcript/) - AI-driven traffic and orders both up 3× YoY; the 2× conversion edge for Catalog-fed searches held, and 75% of AI-attributed orders came from outside the top 100 categories.
 - [Shopify Q1 2026 earnings call](https://www.fool.com/earnings/call-transcripts/2026/05/05/shopify-shop-q1-2026-earnings-transcript/) - AI-driven traffic up 8× YoY, orders from AI searches up ~13×; structured catalog data converts 2× better.
 - [Vercel: ChatGPT referral share of new signups](https://x.com/rauchg/status/1910093634445422639) - CEO's first-party numbers: under 1% of signups in September 2024, 4.8% by March 2025, 10% by April.
 
