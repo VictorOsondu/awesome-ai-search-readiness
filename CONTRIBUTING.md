@@ -38,6 +38,10 @@ Rules:
 - One blank line between subsections
 - Alphabetical within a subsection unless a deliberate reading order is documented
 
+### Year tags
+
+`[2025]` / `[2026]` tags mark when a resource shipped or was last verified as current. During the periodic review, any tag more than one calendar year old is either re-verified (and re-dated) or removed. A tag is a freshness claim, not a permanent label.
+
 ## Pull request checklist
 
 Before opening a PR:

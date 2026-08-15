@@ -132,7 +132,7 @@ This section includes tools with public access or pricing. Contact-sales-only en
 
 Methodologies, frameworks, and checklists for auditing a site's AI search readiness.
 
-- [AI Search Content Optimization Checklist](https://www.aleydasolis.com/en/ai-search/ai-search-optimization-checklist/) - Aleyda Solís's free Google Sheet covering crawlability, chunks, citation-worthiness, measurement. Updated April 2026.
+- [AI Search Content Optimization Checklist](https://www.aleydasolis.com/en/ai-search/ai-search-optimization-checklist/) - Aleyda Solís's free Google Sheet covering crawlability, chunks, citation-worthiness, measurement. Updated May 2026.
 - [The AI Search Manual](https://ipullrank.com/ai-search-manual) - Mike King's book-length open manual on Relevance Engineering. Free to read.
 
 ## Research & Evidence
@@ -142,7 +142,7 @@ Academic papers, benchmarks, and studies. The antidote to vendor-claim inflation
 - [GEO: Generative Engine Optimization (Aggarwal et al., KDD 2024)](https://arxiv.org/abs/2311.09735) - Princeton-led paper that coined the field. Reports up to **40%** visibility uplift, not the widely-misquoted 115%.
 - [Evaluating Verifiability in Generative Search Engines](https://arxiv.org/abs/2304.09848) - EMNLP 2023 audit: 51.5% of generated sentences were fully citation-supported.
 - [GEO-Bench dataset](https://huggingface.co/datasets/GEO-Optim/geo-bench) - 10k-query open benchmark behind the Princeton paper. Run your own experiments.
-- [GEO-Optim/GEO reference implementation](https://github.com/GEO-optim/GEO) - Princeton paper's official code and benchmark harness. Reproduce the numbers rather than trusting them. `[2024]`.
+- [GEO-Optim/GEO reference implementation](https://github.com/GEO-optim/GEO) - Princeton paper's official code and benchmark harness. Reproduce the numbers rather than trusting them.
 - [CC-GSEO-Bench: A Content-Centric Benchmark](https://arxiv.org/abs/2509.05607) - Creator-centric successor benchmark (Chen et al., 2025) scoring sources on exposure, credit, impact, readability, trust.
 - [AutoGEO](https://github.com/cxcscmu/AutoGEO) - CMU framework (ICLR 2026) that learns engine preferences and rewrites content. Research-grade; don't aim it at production. `[2026]`.
 - [The crawl-to-click gap](https://blog.cloudflare.com/crawlers-click-ai-bots-training/) - Cloudflare network-level data: Anthropic crawled ~38,000 pages per referral in July 2025.
@@ -239,7 +239,7 @@ Repos you can read, run, and fork. Vetted for a real licence, recent commits, an
 Where practitioners actually compare notes. Marketing thought-leadership Substacks excluded unless they ship original evidence.
 
 - [Growth Memo](https://www.growth-memo.com/) - Kevin Indig's research-led newsletter: original UX studies, clickstream analyses, citation-pattern work. `[community]`.
-- [SEOFOMO](https://seofomo.co/) - Aleyda Solís's weekly curated digest of SEO + AI-search news. ~40K subscribers. `[community]` `[requires signup]`.
+- [SEOFOMO](https://seofomo.co/) - Aleyda Solís's weekly curated digest of SEO + AI-search news. ~45K subscribers. `[community]` `[requires signup]`.
 - [Lily Ray on Substack](https://lilyraynyc.substack.com/) - Original analyses of AI-content backfire patterns, AI Overview anomalies, and listicle gaming. `[community]`.
 - [r/TechSEO](https://www.reddit.com/r/TechSEO/) - Subreddit where AI-search technical questions get real practitioner answers. Skip the bigger SEO subs. `[community]`.
 
