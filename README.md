@@ -164,7 +164,7 @@ This section is deliberately short. Indie engineering writeups with dated screen
 ### Losses
 
 - [Chegg, Inc. v. Google LLC — antitrust complaint](https://www.courtlistener.com/docket/69668109/chegg-inc-v-google-llc/) - Chegg's lawsuit attributes a 49% YoY drop in non-subscriber traffic (Jan 2024 → Jan 2025) to AI Overviews.
-- [DMG Media submission to the UK CMA on Google's AI Overviews](https://assets.publishing.service.gov.uk/media/68a5aa50a6acbbc7fb96a3b2/DMG_Media.pdf) - UK regulator submission: desktop CTR fell from 25.2% to 2.8% (−89%) when an AI Overview appears. `[uk]`.
+- [DMG Media submission to the UK CMA on Google's AI Overviews](https://assets.publishing.service.gov.uk/media/68a5aa50a6acbbc7fb96a3b2/DMG_Media.pdf) - UK regulator submission: desktop CTR fell from 25.2% to 2.8% (−89%) when an AI Overview appears; in June 2026 the CMA [imposed a conduct requirement](https://www.gov.uk/government/news/cma-secures-fairer-deal-for-publishers-and-improves-google-search-services-in-uk) requiring Google to let publishers opt out of powering AI Overviews, phased in over nine months. `[uk]`.
 - [Penske Media Corporation v. Google LLC — antitrust complaint](https://www.courtlistener.com/docket/71332589/penske-media-corporation-v-google-llc/) - Rolling Stone and Variety owner's federal filing: affiliate revenue down more than a third since AI Overviews scaled.
 - [Stack Overflow is almost dead](https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/) - Gergely Orosz charts Stack Overflow's own data: monthly questions back at 2009 launch levels by May 2025.
 
