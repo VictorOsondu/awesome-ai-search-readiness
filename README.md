@@ -72,6 +72,14 @@ The machine-readable layer. If AI tools cannot parse your site, no amount of cle
 - [JSON-LD](https://json-ld.org/) - Preferred format for structured data. Lives in a `<script>` tag; doesn't touch the visible page.
 - [llms.txt proposal](https://llmstxt.org/) - Site-level file pointing AI crawlers to your most important content. Google states it is not used by Search or its AI features — see the "llms.txt gets you cited" myth below before investing.
 
+### Agentic Browsing
+
+Answer engines were the first wave; agents that operate websites on the user's behalf are the second. Early, but the standards work has started — and that work explains where files like `llms.txt` actually fit.
+
+- [WebMCP](https://github.com/webmachinelearning/webmcp) - W3C Community Group draft letting a site declare the actions an AI agent can take on it, as JavaScript functions or annotated forms with structured schemas. Under active incubation in the Web Machine Learning Community Group.
+- [Lighthouse: Agentic Browsing audits](https://developer.chrome.com/docs/lighthouse/agentic-browsing/scoring) - Chrome's Lighthouse now ships an experimental Agentic Browsing audit category — `llms.txt` and WebMCP checks live here, not in SEO. Requires Chrome 150 or later. `[2026]`.
+- [Perplexity Comet](https://www.perplexity.ai/comet) - Perplexity's agentic browser, on desktop since July 2025, Android since November 2025, and iOS since March 2026. What your site looks like to an agent is now a real user experience. `[2026]`.
+
 ## Content Structure
 
 Writing for citation is not writing for SEO. AI tools extract sentences, not pages. Structure for clarity, answer specific questions, lead with the fact.
