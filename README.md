@@ -108,10 +108,10 @@ Tools that monitor whether ChatGPT, Perplexity, Claude, or Gemini cite your site
 
 This section includes tools with public access or pricing. Contact-sales-only enterprise products are out of scope: you can't read the price before you enquire.
 
-*Pricing and supported engines last reviewed July 2026; verify before purchase.*
+*Pricing and supported engines last reviewed August 2026; verify before purchase.*
 
 - [HubSpot AI Search Grader](https://www.hubspot.com/aeo-grader/ai-search-tool) - Free, no-signup diagnostic showing how ChatGPT, Perplexity, and Gemini describe your brand.
-- [Ahrefs AI Visibility Checker](https://ahrefs.com/ai-visibility-checker) - Free check across ChatGPT, Gemini, Perplexity, Copilot, and AI Overviews. No signup; paid from $398/mo.
+- [Ahrefs AI Visibility Checker](https://ahrefs.com/ai-visibility-checker) - Free check across ChatGPT, Gemini, Perplexity, Copilot, AI Overviews, and AI Mode. No signup; paid from $398/mo.
 - [Otterly.AI](https://otterly.ai/) - Continuous monitoring across the major AI engines. Transparent pricing from $29/mo. `[paid]` `[requires signup]`.
 - [Peec AI](https://peec.ai/) - Prompt-based tracking with multi-region and Looker support. From €85/mo. `[paid]` `[requires signup]`.
 - [AthenaHQ](https://athenahq.ai/) - AEO monitoring with a free entry tier; paid Starter listed at $295/month. `[paid]` `[requires signup]`.
