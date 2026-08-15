@@ -109,6 +109,8 @@ Who you let in, and how you tell them apart in your logs. Blocking the training 
 - [Anthropic: crawling and how to block it](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) - First-party rules for ClaudeBot (training), Claude-User, and Claude-SearchBot, each controllable separately in `robots.txt`.
 - [Google: list of Google's common crawlers](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers) - Defines Google-Extended, the token that opts content out of Gemini training without affecting Search ranking.
 - [OpenAI: overview of crawlers](https://developers.openai.com/api/docs/bots) - First-party spec for GPTBot (training) versus OAI-SearchBot (ChatGPT search). Block one, keep the other — they are different user-agents.
+- [Really Simple Licensing (RSL)](https://rslstandard.org/) - Open standard for declaring machine-readable licence terms to AI crawlers — the "on what terms" companion to robots.txt's "yes or no". Launched September 2025 with backers including Reddit, Yahoo, Cloudflare, Fastly, and O'Reilly Media. `[2025]`.
+- [Cloudflare: Pay per crawl](https://blog.cloudflare.com/introducing-pay-per-crawl/) - HTTP 402-based mechanism letting sites charge AI crawlers per request. Launched in private beta in July 2025; Cloudflare is now evolving it into a broader pay-per-use model. Pairs with the crawler-blocking myth entry below: blocking and licensing are different levers. `[2025]`.
 
 ## Citation Tracking
 
