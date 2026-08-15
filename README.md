@@ -177,6 +177,7 @@ How each major answer engine selects, cites, and ranks sources — straight from
 - [OpenAI: ChatGPT search](https://openai.com/index/introducing-chatgpt-search/) - OpenAI's official explanation of how ChatGPT search retrieves and cites web content.
 - [AI Search Architecture Deep Dive](https://ipullrank.com/ai-search-manual/search-architecture) - iPullRank's architectural teardown of ChatGPT, Bing Copilot, Perplexity, and Gemini retrieval pipelines. Includes diagrams.
 - [OpenAI: product feed specification](https://developers.openai.com/commerce/specs/file-upload/products) - Official schema for feeding products into ChatGPT with live price and availability. The e-commerce counterpart to a sitemap. `[2026]`.
+- [OpenAI: Testing ads in ChatGPT](https://openai.com/index/testing-ads-in-chatgpt/) - Ads now appear in ChatGPT answers for Free- and Go-tier users — launched in the US in February 2026, extended to the UK, Mexico, Brazil, Japan, and South Korea in August. Changes the economics: sponsored slots compete with organic citations. `[2026]`.
 
 ### Microsoft Bing & Copilot
 
@@ -184,6 +185,7 @@ Bing documents how its own index supports Copilot. OpenAI says ChatGPT search us
 
 - [Bing Webmaster Tools: AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) - First-party Copilot and Bing citation and grounding-query data. `[2026]`.
 - [Keeping content discoverable with sitemaps in AI-powered search](https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search) - Bing guidance on crawlability and freshness for AI-powered search. `[2025]`.
+- [New AI Visibility Insights in Bing Webmaster Tools](https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare) - June 2026 expansion of the AI Performance report: query intents, topic clusters, citation share, and period-over-period comparison, all in preview. `[2026]`.
 
 ### Perplexity
 
@@ -194,6 +196,11 @@ Bing documents how its own index supports Copilot. OpenAI says ChatGPT search us
 
 - [Anthropic: Claude can now search the web](https://claude.com/blog/web-search) - Announcement and behaviour notes for Claude's web search.
 - [How Claude Picks Sources: a technical breakdown](https://www.oltre.ai/blog/how-claude-picks-sources-technical-breakdown-claude-citations/) - Analysis showing 86.7% overlap between Claude citations and Brave Search results — Brave visibility is the gating factor.
+
+### Grok (xAI)
+
+- [xAI Docs: Web Search](https://docs.x.ai/developers/tools/web-search) - First-party documentation of Grok's server-side web search tool, including allowed- and excluded-domain controls (five each) — inclusion can be gated per request, so your domain's standing matters.
+- [xAI Docs: Citations](https://docs.x.ai/developers/tools/citations) - How Grok returns source citations: full URL lists by default, plus optional inline `[[N]](url)` annotations with positional metadata.
 
 ### Google Gemini & AI Overviews
 
