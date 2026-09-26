@@ -54,7 +54,7 @@ The same work goes by half a dozen names. They are used interchangeably in pract
 Start here if AI search is a new lens for you. These are the orientations, not the tactics.
 
 - [Google: AI Overviews and your website](https://developers.google.com/search/docs/appearance/ai-features) - Google's own primer on how AI features pull from indexed content.
-- [Perplexity: How sources are selected](https://www.perplexity.ai/hub/faq/how-does-perplexity-work) - First-hand explanation of citation behaviour from one of the major answer engines.
+- [Perplexity: How sources are selected](https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work) - First-hand explanation of citation behaviour from one of the major answer engines.
 - [Learn AI Search](https://learningaisearch.com/) - Aleyda Solís's free, regularly-updated roadmap across GEO, AEO, and LLMO. Vendor-neutral.
 - [A Reflection on SEO, GEO & AI Search in 2025](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search) - Lily Ray's year-end argument that GEO is mostly repackaged SEO. Useful corrective.
 - [The AI Search Manual: Introduction](https://ipullrank.com/ai-search-manual/introduction) - Mike King's open book-length GEO manual. Chapter 1 is orientation; later chapters get tactical. Email serialisation `[requires signup]`.
@@ -107,7 +107,7 @@ Who you let in, and how you tell them apart in your logs. Blocking the training 
 
 - [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt) - Community-maintained AI crawler list with generated server configurations.
 - [Anthropic: crawling and how to block it](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) - First-party rules for ClaudeBot (training), Claude-User, and Claude-SearchBot, each controllable separately in `robots.txt`.
-- [Google: list of Google's common crawlers](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers) - Defines Google-Extended, the token that opts content out of Gemini training without affecting Search ranking.
+- [Google: list of Google's common crawlers](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers) - Defines Google-Extended, the token that opts content out of Gemini training without affecting Search ranking.
 - [OpenAI: overview of crawlers](https://developers.openai.com/api/docs/bots) - First-party spec for GPTBot (training) versus OAI-SearchBot (ChatGPT search). Block one, keep the other — they are different user-agents.
 - [Really Simple Licensing (RSL)](https://rslstandard.org/) - Open standard for declaring machine-readable licence terms to AI crawlers — the "on what terms" companion to robots.txt's "yes or no". Launched September 2025 with backers including Reddit, Yahoo, Cloudflare, Fastly, and O'Reilly Media. `[2025]`.
 - [Cloudflare: Pay per crawl](https://blog.cloudflare.com/introducing-pay-per-crawl/) - HTTP 402-based mechanism letting sites charge AI crawlers per request. Launched in private beta in July 2025; Cloudflare is now evolving it into a broader pay-per-use model. Pairs with the crawler-blocking myth entry below: blocking and licensing are different levers. `[2025]`.
@@ -120,7 +120,7 @@ This section includes tools with public access or pricing. Contact-sales-only en
 
 *Pricing and supported engines last reviewed August 2026; verify before purchase.*
 
-- [HubSpot AI Search Grader](https://www.hubspot.com/aeo-grader/ai-search-tool) - Free, no-signup diagnostic showing how ChatGPT, Perplexity, and Gemini describe your brand.
+- [HubSpot AI Search Grader](https://www.hubspot.com/ai-search-grader) - Free, no-signup diagnostic showing how ChatGPT, Perplexity, and Gemini describe your brand.
 - [Ahrefs AI Visibility Checker](https://ahrefs.com/ai-visibility-checker) - Free check across ChatGPT, Gemini, Perplexity, Copilot, AI Overviews, and AI Mode. No signup; paid from $398/mo.
 - [Otterly.AI](https://otterly.ai/) - Continuous monitoring across the major AI engines. Transparent pricing from $29/mo. `[paid]` `[requires signup]`.
 - [Peec AI](https://peec.ai/) - Prompt-based tracking with multi-region and Looker support. From €85/mo. `[paid]` `[requires signup]`.
